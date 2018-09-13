@@ -87,7 +87,7 @@ module AliyunOld
 
         # Get the CORS
         #
-        # @return [Array<Aliyun::Oss::Struct::Cors>]
+        # @return [Array<AliyunOld::Oss::Struct::Cors>]
         #
         # @see Api::BucketProperty#bucket_get_cors
         def cors!
@@ -121,14 +121,14 @@ module AliyunOld
 
         # Get the website configuration
         #
-        # @return [Aliyun::Oss::Rule::Website]
+        # @return [AliyunOld::Oss::Rule::Website]
         #
         # @see Api::BucketProperty#bucket_get_website
         def website!
           result = client.bucket_get_website.parsed_response
           suffix_keys = %w(WebsiteConfiguration IndexDocument Suffix)
           error_keys = %w(WebsiteConfiguration ErrorDocument Key)
-          Aliyun::Oss::Struct::Website.new(
+          AliyunOld::Oss::Struct::Website.new(
             suffix: Utils.dig_value(result, *suffix_keys),
             error_key: Utils.dig_value(result, *error_keys)
           )
@@ -157,14 +157,14 @@ module AliyunOld
 
         # Get the referer configuration
         #
-        # @return [Aliyun::Oss::Struct::Referer]
+        # @return [AliyunOld::Oss::Struct::Referer]
         #
         # @see Api::BucketProperty#bucket_get_referer
         def referer!
           result = client.bucket_get_referer.parsed_response
           allow_empty = %w(RefererConfiguration AllowEmptyReferer)
           referers = %w(RefererConfiguration RefererList Referer)
-          Aliyun::Oss::Struct::Referer.new(
+          AliyunOld::Oss::Struct::Referer.new(
             allow_empty: Utils.dig_value(result, *allow_empty),
             referers: Utils.dig_value(result, *referers)
           )
@@ -184,7 +184,7 @@ module AliyunOld
 
         # Get the lifecycle configuration
         #
-        # @return [Array<Aliyun::Oss::Struct::Lifecycle?]
+        # @return [Array<AliyunOld::Oss::Struct::Lifecycle?]
         #
         # @see Api::BucketProperty#bucket_get_lifecycle
         def lifecycle!

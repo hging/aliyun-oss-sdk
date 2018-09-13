@@ -89,5 +89,5 @@ module AliyunOld
   end
 end
 
-require 'aliyun/oss/struct/file'
-require 'aliyun/oss/struct/directory'
+require 'aliyun_old/oss/struct/file'
+require 'aliyun_old/oss/struct/directory'

@@ -4,7 +4,7 @@
 
 If a error occurs when visit the OSS, the OSS will be return a error code and error message, making it easy for users to locate problems, and make the appropriate treatment. For code not 2XX, you can get information:
 
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     client = Aliyun::Oss::Client.new('ACCESS_KEY', 'SECRET_KEY', host: 'oss-cn-hangzhou.aliyuncs.com', bucket: 'oss-sdk-dev-hangzhou')
     

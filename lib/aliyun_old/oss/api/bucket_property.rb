@@ -99,10 +99,10 @@ module AliyunOld
         #
         # @see https://docs.aliyun.com/#/pub/oss/api-reference/bucket&PutBucketLifecycle Put Bucket Lifecycle
         #
-        # @param rules [Array<Aliyun::Oss::Struct::LifeCycle>] rules for lifecycle
+        # @param rules [Array<AliyunOld::Oss::Struct::LifeCycle>] rules for lifecycle
         #
         # @raise [RequestError]
-        # @raise [Aliyun::Oss::InvalidLifeCycleRuleError]
+        # @raise [AliyunOld::Oss::InvalidLifeCycleRuleError]
         #   if rule invalid
         #
         # @return [Response]
@@ -113,7 +113,7 @@ module AliyunOld
 
           rules.each do |rule|
             unless rule.valid?
-              fail Aliyun::Oss::InvalidLifeCycleRuleError, rule.inspect
+              fail AliyunOld::Oss::InvalidLifeCycleRuleError, rule.inspect
             end
           end
 
@@ -134,7 +134,7 @@ module AliyunOld
         #
         # @see https://docs.aliyun.com/#/pub/oss/api-reference/cors&PutBucketcors Put Bucket cors
         #
-        # @param rules [Array<Aliyun::Oss::Struct::Cors>] array of rule
+        # @param rules [Array<AliyunOld::Oss::Struct::Cors>] array of rule
         #
         # @raise [RequestError]
         # @raise [InvalidCorsRule]
@@ -148,7 +148,7 @@ module AliyunOld
 
           rules.each do |rule|
             unless rule.valid?
-              fail Aliyun::Oss::InvalidCorsRuleError, rule.inspect
+              fail AliyunOld::Oss::InvalidCorsRuleError, rule.inspect
             end
           end
 

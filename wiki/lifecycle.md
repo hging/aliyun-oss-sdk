@@ -30,7 +30,7 @@ In our Library, to use Struct::LifeCycle to define a rule:
 
 To set your LifeCycle with this rules:
 
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host = "oss-cn-hangzhou.aliyuncs.com"
@@ -43,7 +43,7 @@ To set your LifeCycle with this rules:
 
 To get LifeCycle for bucket, use Client#bucket_get_lifecycle:
 
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host = "oss-cn-hangzhou.aliyuncs.com"
@@ -60,7 +60,7 @@ To get LifeCycle for bucket, use Client#bucket_get_lifecycle:
 With Client#bucket_disable_lifecycle, you can disable LifeCycle:
 
 
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host = "oss-cn-hangzhou.aliyuncs.com"

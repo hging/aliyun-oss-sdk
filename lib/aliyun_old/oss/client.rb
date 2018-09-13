@@ -1,28 +1,28 @@
-require 'aliyun/oss/xml_generator'
+require 'aliyun_old/oss/xml_generator'
 # Function Based
-require 'aliyun/oss/api/buckets'
-require 'aliyun/oss/api/bucket_property'
-require 'aliyun/oss/api/bucket_objects'
-require 'aliyun/oss/api/bucket_multiparts'
+require 'aliyun_old/oss/api/buckets'
+require 'aliyun_old/oss/api/bucket_property'
+require 'aliyun_old/oss/api/bucket_objects'
+require 'aliyun_old/oss/api/bucket_multiparts'
 # Object Based
-require 'aliyun/oss/client/clients'
+require 'aliyun_old/oss/client/clients'
 
-require 'aliyun/oss/http'
+require 'aliyun_old/oss/http'
 
 module AliyunOld
   module Oss
     class Client
-      include Aliyun::Oss::Api::Buckets
-      include Aliyun::Oss::Api::BucketProperty
-      include Aliyun::Oss::Api::BucketObjects
-      include Aliyun::Oss::Api::BucketMultiparts
+      include AliyunOld::Oss::Api::Buckets
+      include AliyunOld::Oss::Api::BucketProperty
+      include AliyunOld::Oss::Api::BucketObjects
+      include AliyunOld::Oss::Api::BucketMultiparts
 
       attr_reader :access_key, :secret_key, :bucket
 
       # Initialize a object
       #
       # @example
-      #   Aliyun::Oss::Client.new("ACCESS_KEY", "SECRET_KEY", host: "oss-cn-beijing.aliyuncs.com", bucket: 'oss-sdk-beijing')
+      #   AliyunOld::Oss::Client.new("ACCESS_KEY", "SECRET_KEY", host: "oss-cn-beijing.aliyuncs.com", bucket: 'oss-sdk-beijing')
       #
       # @param access_key [String] access_key obtained from aliyun
       # @param secret_key [String] secret_key obtained from aliyun

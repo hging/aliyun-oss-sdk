@@ -9,7 +9,7 @@ module AliyunOld
         # @param (see Api::Buckets#list_buckets)
         # @raise (see Api::Buckets#list_buckets)
         #
-        # @return [Array<Aliyun::Oss::Struct::Bucket>]
+        # @return [Array<AliyunOld::Oss::Struct::Bucket>]
         def list(options = {})
           result = client.list_buckets(options).parsed_response
 

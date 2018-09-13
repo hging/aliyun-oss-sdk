@@ -17,7 +17,7 @@ In Aliyun OSS, the basic data unit that user operation is the Object. A single O
 
 Client#bucket_create_object support file or bin data to upload.
 
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host = "oss-cn-hangzhou.aliyuncs.com"
@@ -39,7 +39,7 @@ The Upload limit Data to 5 GB, if large than, visit [Multipart Upload](./multipa
 
 To Create a folder, it's easy, just pass key with "/" at last:
 
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host = "oss-cn-hangzhou.aliyuncs.com"
@@ -56,7 +56,7 @@ Create simulations folder nature created a object with size equals 0. Uploads an
 
 OSS allow users to customize the http headers of object. The following code set the expiration time for the Object:
 
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host = "oss-cn-hangzhou.aliyuncs.com"
@@ -74,7 +74,7 @@ Except Expires, it also support Cache-Control, Content-Disposition, Content-Enco
 
 OSS Support set some user meta information for object. Here we set x-oss-meta-user to username for object:
 
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host = "oss-cn-hangzhou.aliyuncs.com"
@@ -96,7 +96,7 @@ Note: the user meta key is case-insensitive, but value is case-sensitive.
 OSS Allow users to append data to a object, but only for appendable object, Objects created with Append Upload is Appendable object, Upload via Simple Upload is Normal object:
 
 
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host = "oss-cn-hangzhou.aliyuncs.com"
@@ -125,7 +125,7 @@ Note: You can set meta information only when create appendable object(the first 
 
 ### List Objects
 
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host = "oss-cn-hangzhou.aliyuncs.com"
@@ -140,7 +140,7 @@ Note: You can set meta information only when create appendable object(the first 
 
 the method support many Parameters to get flexible results:
 
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host = "oss-cn-hangzhou.aliyuncs.com"
@@ -156,7 +156,7 @@ It list results with prefix: pic and end with "/", for example: "pic-people/". M
 
 ### Get Object
 
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host = "oss-cn-hangzhou.aliyuncs.com"
@@ -173,7 +173,7 @@ It Support Parameters, Range, If-Modified-Since, If-Unmodified-Since, If-Match, 
 
 To get meta information of a object, use Client#get_meta_object:
 
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host = "oss-cn-hangzhou.aliyuncs.com"
@@ -186,7 +186,7 @@ To get meta information of a object, use Client#get_meta_object:
 
 ### Delete Object
 
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host = "oss-cn-hangzhou.aliyuncs.com"
@@ -209,7 +209,7 @@ To get meta information of a object, use Client#get_meta_object:
 
 With Client#bucket_copy_object, we can copy objects from some bucket to others.
 
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host = "oss-cn-hangzhou.aliyuncs.com"
@@ -228,7 +228,7 @@ Now, it allow to modify User meta information.
 
 With Copy object, specify the source object and target object to the same one, we can implement modify user meta information.
 
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host = "oss-cn-hangzhou.aliyuncs.com"

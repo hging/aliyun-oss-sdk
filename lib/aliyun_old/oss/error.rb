@@ -2,7 +2,7 @@ module AliyunOld
   module Oss
     class Error < StandardError; end
 
-    # [Aliyun::Oss::RequestError] when OSS give a Non 2xx response
+    # [AliyunOld::Oss::RequestError] when OSS give a Non 2xx response
     class RequestError < Error
       # Error Code defined by OSS
       attr_reader :code

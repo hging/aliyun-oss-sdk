@@ -36,24 +36,24 @@ module AliyunOld
 
       def current_bucket
         @services[:current_bucket] ||= \
-          Aliyun::Oss::Struct::Bucket.new(name: bucket, client: self)
+          AliyunOld::Oss::Struct::Bucket.new(name: bucket, client: self)
       end
 
       ClientService = ::Struct.new(:client)
 
-      require 'aliyun/oss/client/buckets'
+      require 'aliyun_old/oss/client/buckets'
 
       class BucketsService < ClientService
         include Client::Buckets
       end
 
-      require 'aliyun/oss/client/bucket_objects'
+      require 'aliyun_old/oss/client/bucket_objects'
 
       class BucketObjectsService < ClientService
         include Client::BucketObjects
       end
 
-      require 'aliyun/oss/client/bucket_multiparts'
+      require 'aliyun_old/oss/client/bucket_multiparts'
 
       class BucketMultipartsService < ClientService
         include Client::BucketMultiparts

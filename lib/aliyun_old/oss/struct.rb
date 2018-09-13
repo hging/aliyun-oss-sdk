@@ -13,14 +13,14 @@ module AliyunOld
   end
 end
 
-require 'aliyun/oss/struct/bucket'
-require 'aliyun/oss/struct/object'
-require 'aliyun/oss/struct/multipart'
+require 'aliyun_old/oss/struct/bucket'
+require 'aliyun_old/oss/struct/object'
+require 'aliyun_old/oss/struct/multipart'
 
-require 'aliyun/oss/struct/cors'
-require 'aliyun/oss/struct/lifecycle'
-require 'aliyun/oss/struct/referer'
-require 'aliyun/oss/struct/website'
-require 'aliyun/oss/struct/logging'
+require 'aliyun_old/oss/struct/cors'
+require 'aliyun_old/oss/struct/lifecycle'
+require 'aliyun_old/oss/struct/referer'
+require 'aliyun_old/oss/struct/website'
+require 'aliyun_old/oss/struct/logging'
 
-require 'aliyun/oss/struct/part'
+require 'aliyun_old/oss/struct/part'

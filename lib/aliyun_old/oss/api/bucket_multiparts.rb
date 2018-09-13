@@ -87,7 +87,7 @@ module AliyunOld
         #
         # @param key [String] object name
         # @param upload_id [String] the upload ID return by #bucket_init_multipart
-        # @param parts [Array<Aliyun::Oss::Multipart:Part>] parts
+        # @param parts [Array<AliyunOld::Oss::Multipart:Part>] parts
         #
         # @raise [RequestError]
         # @raise [MultipartPartsEmptyError]

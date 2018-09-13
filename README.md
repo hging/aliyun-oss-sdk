@@ -65,7 +65,7 @@ Here are some more guides for help you. Welcome to advice.
 
 #### Function Based
 
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     # ACCESS_KEY/SECRET_KEY is your access credentials
     # host: your bucket's data center host, eg: oss-cn-hangzhou.aliyuncs.com
@@ -88,7 +88,7 @@ Here are some more guides for help you. Welcome to advice.
 
 #### Object Based
 
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     # ACCESS_KEY/SECRET_KEY is your access credentials
     # host: your bucket's data center host, eg: oss-cn-hangzhou.aliyuncs.com

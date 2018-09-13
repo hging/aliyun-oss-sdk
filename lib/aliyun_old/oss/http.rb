@@ -1,6 +1,6 @@
 require 'httparty'
 require 'addressable/uri'
-require 'aliyun/oss/error'
+require 'aliyun_old/oss/error'
 
 module AliyunOld
   module Oss
@@ -134,7 +134,7 @@ module AliyunOld
       end
 
       def user_agent
-        "aliyun-oss-sdk-ruby/#{Aliyun::Oss::VERSION} " \
+        "aliyun-oss-sdk-ruby/#{AliyunOld::Oss::VERSION} " \
         "(#{RbConfig::CONFIG['host_os']} ruby-#{RbConfig::CONFIG['ruby_version']})"
       end
     end

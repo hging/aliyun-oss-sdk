@@ -24,7 +24,7 @@ module AliyunOld
         # @param (see Api::BucketMultiparts#bucket_list_multiparts)
         # @raise (see Api::BucketMultiparts#bucket_list_multiparts)
         #
-        # @return [Array<Aliyun::Oss::Struct::Multipart>]
+        # @return [Array<AliyunOld::Oss::Struct::Multipart>]
         def list(*args)
           result = client.bucket_list_multiparts(*args).parsed_response
 

@@ -11,7 +11,7 @@ Bucket is a namespace in OSS, as well as management entity for high functions su
 
 ### Create Bucket
 
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host = "oss-cn-hangzhou.aliyuncs.com"
@@ -32,7 +32,7 @@ You can specify bucket name, location(default 'oss-cn-hangzhou') and acl(default
 To get all buckets use Client#list_buckets:
 
  
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host = "oss-cn-hangzhou.aliyuncs.com"
@@ -48,7 +48,7 @@ To get all buckets use Client#list_buckets:
 
 With Client#bucket_set_acl you can modify the ACL:
 
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host, bucket = "oss-cn-hangzhou.aliyuncs.com", "bucket-name"
@@ -69,7 +69,7 @@ Now, it support public-read-write | public-read | private, more detail visit: [B
 
 To get current ACL of Bucket, use Client#bucket_get_acl:
        
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host, bucket = "oss-cn-hangzhou.aliyuncs.com", "bucket-name"
@@ -86,7 +86,7 @@ To get current ACL of Bucket, use Client#bucket_get_acl:
 
 Get bucket's data center location, use Client#bucket_get_location:
 
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host, bucket = "oss-cn-hangzhou.aliyuncs.com", "bucket-name"
@@ -106,7 +106,7 @@ To get more bucket information, visit Bucket#xxx! methods [here](http://www.ruby
 
 If you do need one bucket, delete it with Client#bucket_delete:
     
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host = "oss-cn-hangzhou.aliyuncs.com"

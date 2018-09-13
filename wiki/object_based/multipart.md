@@ -16,7 +16,7 @@ Now, Let's start party!
 Before start a Multipart Upload, we need first initialize a event:
 
     
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host = "oss-cn-hangzhou.aliyuncs.com"
@@ -35,7 +35,7 @@ Upload ID is the UUID for the Multipart Upload Event, store it for use later.
 
 ### Upload Part from local 
 
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host = "oss-cn-hangzhou.aliyuncs.com"
@@ -61,7 +61,7 @@ It can used to upload part to a object. Please note:
 
 ### Complete Multipart Upload
 
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host = "oss-cn-hangzhou.aliyuncs.com"
@@ -84,7 +84,7 @@ Here, we create Aliyun::Oss::Struct::Part to build your part, use Part#valid? to
 
 If some Problem occurs, you may want to abort a Multipart Upload:
 
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host = "oss-cn-hangzhou.aliyuncs.com"
@@ -103,7 +103,7 @@ After abort a multipart, all uploaded parts will be destroyed, But Note: If some
 
 To get all Multipart Upload in this Bucket:
 
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host = "oss-cn-hangzhou.aliyuncs.com"
@@ -119,7 +119,7 @@ Same with all other list method, it support prefix, delimiter, marker to get fle
 
 Sometimes, you want to know which parts are uploaded.
 
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host = "oss-cn-hangzhou.aliyuncs.com"

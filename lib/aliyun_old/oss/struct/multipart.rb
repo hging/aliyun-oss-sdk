@@ -57,7 +57,7 @@ module AliyunOld
         # @example (see Api::BucketMultiparts#bucket_list_parts)
         # @raise (see Api::BucketMultiparts#bucket_list_parts)
         #
-        # @return [Array<Aliyun::Oss::Struct::Part>]
+        # @return [Array<AliyunOld::Oss::Struct::Part>]
         def list_parts(options = {})
           result = client.bucket_list_parts(upload_id, key, options)
                    .parsed_response
@@ -70,7 +70,7 @@ module AliyunOld
 
         # Complete Multipart Upload Event
         #
-        # @param parts [Array<Aliyun::Oss::Multipart:Part>] parts
+        # @param parts [Array<AliyunOld::Oss::Multipart:Part>] parts
         #
         # @see Api::BucketMultiparts#bucket_complete_multipart
         # @example (see Api::BucketMultiparts#bucket_complete_multipart)

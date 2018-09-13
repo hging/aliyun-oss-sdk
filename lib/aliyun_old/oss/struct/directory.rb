@@ -12,7 +12,7 @@ module AliyunOld
         # @param (see Api::BucketObjects#bucket_list_objects)
         # @raise (see Api::BucketObjects#bucket_list_objects)
         #
-        # @return [Array<Aliyun::Oss::Struct::Object>]
+        # @return [Array<AliyunOld::Oss::Struct::Object>]
         def list(options = {})
           Utils.stringify_keys!(options)
           client.bucket_objects.list(options.merge('prefix' => key))

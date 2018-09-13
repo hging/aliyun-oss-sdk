@@ -8,7 +8,7 @@ CORS allow web application visit resources not belongs it's domain. OSS provide 
 
 With Client#bucket_enable_cors, you can set cors easily:
 
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host = "oss-cn-hangzhou.aliyuncs.com"
@@ -27,7 +27,7 @@ More about the rules, visit [OSS API](https://docs.aliyun.com/#/pub/oss/api-refe
 To get current cors rules, you can use Client#bucket_get_cors:
 
     
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host = "oss-cn-hangzhou.aliyuncs.com"
@@ -42,7 +42,7 @@ To get current cors rules, you can use Client#bucket_get_cors:
 
 If you want to diable CORS, just like below:
 
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host = "oss-cn-hangzhou.aliyuncs.com"

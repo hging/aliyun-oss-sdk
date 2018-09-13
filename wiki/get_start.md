@@ -7,7 +7,7 @@ Here, you can know how to do some basic operation with Aliyun OSS SDK.
 
 Mostly OSS API are handled by [Aliyun::Oss::Client](http://www.rubydoc.info/gems/aliyun-oss-sdk/Aliyun/Oss/Client) class, Let's create a instance first:
 
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host = "oss-cn-hangzhou.aliyuncs.com"
@@ -21,7 +21,7 @@ Here, access_key/secret_key is is your access credentials, Aliyun provide three 
 
 Buckets are global object in OSS, so find a uniqueness name for your bucket, Or it fail when create. It can used to store objects. Now, we create a bucket:
 
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host = "oss-cn-hangzhou.aliyuncs.com"
@@ -38,7 +38,7 @@ In our library, most instance methods of Client return [HttpartyResponse](http:/
 
 Object is the most basic unit of data in OSS, you can simple imagine it's just a file. here, we upload a object to OSS:
 
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host, bucket = "oss-cn-hangzhou.aliyuncs.com", "bucket-name"
@@ -54,7 +54,7 @@ Object is the most basic unit of data in OSS, you can simple imagine it's just a
 After you complete some upload, maybe you want to list the objects in the bucket:
 
 
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host, bucket = "oss-cn-hangzhou.aliyuncs.com", "bucket-name"
@@ -70,7 +70,7 @@ With correct parameters, you can get more flexible result. you can get detailed 
 
 Now, you want to get a special object:
 
-    require 'aliyun/oss'
+    require 'aliyun_old/oss'
     
     access_key, secret_key = "your id", "your secret"
     host, bucket = "oss-cn-hangzhou.aliyuncs.com", "bucket-name"
